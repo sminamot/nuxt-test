@@ -6,7 +6,7 @@
         nuxt-test
       </h1>
       <h2 class="subtitle">
-        My superb Nuxt.js project
+        Version 1
       </h2>
       <div class="links">
         <a
