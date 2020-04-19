@@ -6,7 +6,7 @@
         nuxt-test
       </h1>
       <h2 class="subtitle">
-        Version 2
+        Version 3
       </h2>
       <div class="links">
         <a

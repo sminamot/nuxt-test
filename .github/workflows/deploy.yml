@@ -42,3 +42,9 @@ jobs:
         S3_BUCKET: ${{ secrets.S3_BUCKET }}
       run: |
         aws s3 sync ./dist s3://$S3_BUCKET/ --quiet
+
+    - name: Clear CloudFront cache
+      env:
+        CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+      run: |
+        aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'
